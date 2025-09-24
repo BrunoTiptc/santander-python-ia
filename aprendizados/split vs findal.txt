@@ -1,0 +1,17 @@
+split() vs findall() - 
+Diferenças importantes:
+
+split() (o que usei):
+
+Separa por espaços em branco (espaços, quebras de linha, tabs)
+Simples e direto
+
+Exemplo: "Olá mundo!" → ["Olá", "mundo!"]
+
+findall() (do exercício):
+
+Usa regex (expressões regulares)
+Mais preciso para separar palavras
+Ignora pontuação e caracteres especiais
+
+Exemplo: "Olá mundo!" → ["Olá", "mundo"] (sem a exclamação)

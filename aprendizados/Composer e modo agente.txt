@@ -1,0 +1,39 @@
+ O modo Composer e o Agente do Cursor
+I 1 2 3 4 5 6 7
+ 
+
+Além do bate-papo padrão, o Cursor introduziu um conceito chamado Composer e Agente. 
+Esses são recursos mais avançados que talvez você não use imediatamente, mas vale a pena saber o que eles são:
+
+Composer: 
+
+este é um painel especial em que você pode dividir uma grande tarefa em etapas e permitir que a IA o ajude em cada uma delas. 
+Por exemplo, imagine que você queira "Desenvolver um jogo de cartas simplificado". Você poderia digitar no Composer:
+Crie a classe Card com naipe e valor.
+Crie a classe Deck que gera 52 cartas e pode distribuir.
+A lógica do jogo é distribuir 2 cartas para cada jogador e determinar o vencedor de acordo com o valor.
+Em seguida, você pode pedir ao Composer (talvez usando o modo Agent) para implementar a etapa 1, depois a etapa 2 etc., 
+verificando cada etapa. É uma maneira de planejar e executar com IA sem perder o panorama geral.
+
+Modo agente: 
+
+é como um "modo automático" em que você delega um objetivo de alto nível à IA. 
+De acordo com a documentação do Cursor, o modo agente pode "concluir tarefas de ponta a ponta, mantendo o programador no circuito".
+ Na prática, isso significa que, se você disser para "criar completamente a funcionalidade X",
+ o agente tentará gerar várias alterações nos arquivos, até mesmo criar novos, para atingir esse objetivo.
+  Ele sempre mostrará a você as alterações antes de aplicá-las, é claro.
+   Ele ainda é experimental. Para usá-lo, às vezes você escolhe Agente em vez de Editar ao fazer uma solicitação.
+    Um exemplo: "Adicionar autenticação básica de usuário ao projeto (registro e login)".
+     O agente poderia criar um arquivo auth.py com funções de registro/login, 
+     modificar seu app.py para integrá-lo, etc., tudo em um único comando (com sua confirmação em cada etapa). 
+     Impressionante, mas você precisa verificar isso com cuidado.
+ 
+
+Quando usar um ou outro?
+
+Se a tarefa for difusa ou envolver muitos arquivos, o Agente pode ser útil, mas é aconselhável começar com projetos pequenos.
+ Para tarefas localizadas (refatoração de uma função, correção de um bug), é melhor usar o Bate-papo normal ou o Edit inline.
+
+Pense no Composer/Agente como funções para usuários avançados. 
+Neste manual, nos primeiros projetos, vamos nos concentrar no uso do bate-papo e das edições diretas. 
+Mais tarde, em fluxos avançados, voltaremos a falar sobre como aproveitar ao máximo essas ferramentas em projetos maiores.
