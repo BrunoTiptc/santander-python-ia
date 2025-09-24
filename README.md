@@ -1,4 +1,4 @@
-# Santander Python IA 🚀
+Santander Python IA 🚀
 
 Bem-vindo ao repositório do curso **Santander Bootcamp Python IA**!  
 
